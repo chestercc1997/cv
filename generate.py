@@ -3,8 +3,8 @@
 """Generates LaTeX, markdown, and plaintext copies of my cv."""
 
 __author__ = [
-    'Brandon Amos <http://bamos.github.io>',
-    'Ellis Michael <http://ellismichael.com>',
+    'Chen Chen <http://cchen099.me>',
+
 ]
 
 import argparse
@@ -77,8 +77,8 @@ def get_pub_md(context, config):
         if len(authors_not_found) > 0:
             print('Author URLs not found in cv.yaml:')
             print('\n'.join(authors_not_found))
-            if config['error_without_author_url']:
-                raise ValueError('error: author URLs not found')
+            # if config['error_without_author_url']:
+            #     raise ValueError('error: author URLs not found')
 
         return formatted_authors
 

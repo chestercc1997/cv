@@ -1,0 +1,46 @@
+\documentclass[11pt,letter,sans]{moderncv}
+
+\usepackage{longtable}
+\setlength{\LTleft}{0pt}
+\definecolor{tab_highlight}{HTML}{f0c967}
+
+\moderncvcolor{<< color >>}
+\definecolor{color2}{rgb}{<<color2>>}
+\moderncvstyle{<< style >>}
+\colorlet{firstnamecolor}{color1}
+
+\usepackage[top=1in, bottom=1in, left=.7in, right=.7in]{geometry}
+
+% Define filled heart symbol
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+
+\usepackage{mathabx} % For \bigstar
+
+% Use the new X logo (aka a sans-serif blackboard X)
+\usepackage{bbm}
+\renewcommand*{\twittersocialsymbol}{$\mathbbmss{X}$~}
+
+\usepackage{lastpage}
+\cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
+
+\AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}, allcolors=color1, colorlinks}}
+\name{<< name.first >>}{<< name.last >>}
+\email{<< email >>}
+\homepage{<< url >>}
+\social[linkedin]{<<social.linkedin>>}
+\social[twitter]{<<social.twitter>>}
+\social[github]{<<social.github>>}
+\extrainfo{\small Last updated on \today}
+
+\frenchspacing
+
+\begin{document}
+\makecvtitle
+\vspace{-1cm}
+
+\rfoot{}
+
+<< body >>
+
+\end{document}

@@ -1,0 +1,117 @@
+name:
+  first: Chen 
+  last: Chen
+email: cchen099@connect.hkust-gz.edu.cn
+pdf: /data/cv.pdf
+src: https://github.com/chestercc1997/cv
+url: cchen099.me
+social:
+  github: chestercc1997
+  google_scholar: xy8E1gIAAAAJ&hl=en&authuser=1
+
+# LaTeX formatting
+style: banking # casual, classic, oldstyle, or banking
+color: blue # blue, orange, green, red, purple, grey and black
+color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
+
+order:
+  - [about, NONE]
+  # - [current_position, Current Position]
+  - [education, Education]
+  - [positions, Experiences]
+  # - [research_interests, Research Interests]
+  - [all_publications, Publications]
+
+  # - [categories_publications, Publications]
+  # - [news, News]
+  # - [repos, Open Source Repositories]
+
+  # - [talks, Invited Talks]
+  # - [advising, Interns and Students]
+  - [honors, Awards]
+  # - [projs, Ongoing Projects]
+  - [service, Service]
+  # - [teaching, Teaching]
+  # - [skills, Skills]
+
+about: |
+  <p align='justify'>
+  I am a third-year Ph.D. candidate at {Hong Kong University of Science and Technology (Guangzhou) (HKUST(GZ))}, advised by \href{https://hongcezh.people.ust.hk}{Prof. Hongce Zhang}. I am also a visiting scholar at the {University of Maryland, College Park}, where I work closely with \href{https://ycunxi.github.io/cunxiyu/}{Prof. Cunxi Yu}.
+  </p>
+  <h3>Research Interests:</h3>
+  <ul>
+    <li>Logic Synthesis and Technology Mapping
+    </li>
+    <li>Equality Saturation </li>
+    <li>Formal Verification Using Algebraic Methods </li>
+    <li>Graph Learning in Electronic Design Automation </li>
+  </ul>
+
+# current_position:
+#   - place: Meta, Fundamental AI Research (FAIR)
+#     location: New York City
+#     title: Research Scientist
+#     dates: 2019 -- Present
+
+education:
+  - school: Hong Kong University of Science and Technology (Guangzhou)
+    degree: Ph.D. in Microelectronics
+    dates: 2022 -- present # May 19, 2019
+    details:
+      - "Advisor: \\href{https://hongcezh.people.ust.hk}{Hongce Zhang}"
+  - school: The Hong Kong University of Science and Technology
+    degree: M.S. in Electronic Engineering
+  - school: Macau University of Science and Technology 
+    degree: B.S. in Electronic Information Technology
+
+positions:
+  - place: University of Maryland, College Park
+    title: Visiting Scholar
+    dates: 2024.09-2025.06
+    inline_detail: "with \\href{https://ycunxi.github.io/cunxiyu/}{Prof. Cunxi Yu} on logic synthesis and ML for formal verification"
+
+  - place: The Hong Kong University of Science and Technology
+    title: Independent Study and Research
+    dates: 2021.09-2022.02
+    inline_detail: "with \\href{https://eeweiz.home.ece.ust.hk}{Prof. Wei Zhang} on High-Radix Fast Fourier Transform for CNN Accelerator on FPGA using HLS"
+
+
+honors:
+  - title: Best Paper Nomination at DAC
+    year: 2025
+  - title: 3rd Place Award of EDAthon Contest
+    year: 2023
+    url: https://sites.google.com/view/ceda-hk/edathon-2023
+
+all_publications:
+  name: "Chen Chen"
+  file: all.bib
+  group_by_topic: False
+  sort_bib: True
+  include_image: False
+  group_by_year: True
+  prefix: 'C'
+  prefix_reverse: True
+  show_author_url: False
+  error_without_author_url: False
+  author_urls:
+    'Yuzhe Ma' : 'https://www.yuzhe-ma.com'
+    'Guangyu Hu' : 'https://guangyuhu.me'
+    'Dongsheng Zuo' : 'https://dszuo.github.io'
+    'Hongce Zhang' : 'https://hongcezh.people.ust.hk'
+    'Cunxi Yu' : 'https://ycunxi.github.io/cunxiyu/'
+    'Chenhui Deng' : 'https://chenhui1016.github.io'
+    'Daniela Kaufmann' : 'https://danielakaufmann.at'
+
+service:
+    reviewing:
+    # Artifact Evaluation Committee:
+    -  "\\href{https://ifm2024.cs.manchester.ac.uk/artifacts.html#artifact-evaluation-committee}{The 19th International Conference on Integrated Formal Methods (IFM2024)}"
+    -  "The 20th International Conference on Integrated Formal Methods (IFM2025)"
+    -  "\\href{https://tacas.info/artifacts-25.php}{The 31th  International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS2025)}"
+    
+skills:
+  - title: Programming
+    details: Rust,C,C++,Python,Java
+
+
