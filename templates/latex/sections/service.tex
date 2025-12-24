@@ -14,4 +14,11 @@
 ~< for item in items.reviewing >~
 << item >> \\
 ~< endfor >~
+
+~< if items.reviewer >~
+\subsection{Reviewer}
+~< for item in items.reviewer >~
+<< item >> \\
+~< endfor >~
+~< endif >~
 ~< endblock body >~

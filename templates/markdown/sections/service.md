@@ -27,4 +27,15 @@
 </tr>
 {% endfor %}
 </table>
+
+{% if items.reviewer %}
+### Reviewer
+<table class="table table-hover">
+{% for item in items.reviewer %}
+<tr>
+  <td style='padding-right:0;'>{{ item }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endif %}
 {% endblock body %}

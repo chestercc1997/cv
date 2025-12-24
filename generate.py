@@ -3,7 +3,7 @@
 """Generates LaTeX, markdown, and plaintext copies of my cv."""
 
 __author__ = [
-    'Chen Chen <http://cchen099.me>',
+    'Chen Chen <http://chestercc1997.github.io/>',
 
 ]
 
@@ -71,7 +71,7 @@ def get_pub_md(context, config):
                 new_auth = f"<a href='{url}' target='_blank'>{new_auth}</a>"
 
             if config['name'] in new_auth:
-                new_auth = "<strong>" + new_auth + "</strong>"
+                new_auth = "<strong><u>" + new_auth + "</u></strong>"
             formatted_authors.append(new_auth)
 
         if len(authors_not_found) > 0:
@@ -274,7 +274,7 @@ def get_pub_latex(context, config):
                 new_auth = fr"\href{{{url}}}{{{new_auth}}}"
 
             if config['name'] in new_auth:
-                new_auth = r"\textbf{" + new_auth + r"}"
+                new_auth = r"\underline{\textbf{" + new_auth + r"}}"
             new_auth = new_auth.replace('. ', '.~')
             new_auth = r'\mbox{' + new_auth + '}'
             formatted_authors.append(new_auth)
